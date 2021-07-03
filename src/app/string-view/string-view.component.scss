@@ -1,0 +1,16 @@
+.string-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 60px;
+}
+
+.string--palindrome {
+  color: #f44336;
+}
+
+.string--number {
+  color: #2196f3;
+}
