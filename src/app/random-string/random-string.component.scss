@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.string {
+  min-height: 100px;
+
+
+  &__content {
+    font-size: 60px;
+    word-break: break-word;
+
+    &--palindrome {
+      color: #f44336;
+    }
+
+    &--number {
+      color: #2196f3;
+    }
+  }
+}
+
+.controls {
+  &__start-stop {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  &__manual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}

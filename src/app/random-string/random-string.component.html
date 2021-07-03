@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="string">
+    <span
+      *ngIf="!isContainZero"
+      [class.string__content]="true"
+      [class.string__content--palindrome]="isPalindrome"
+      [class.string__content--number]="isNumber"
+    >
+      {{string}}
+    </span>
+  </div>
+
+  <div class="controls">
+    <div class="controls__start-stop">
+      <button (click)="startIntervalSubscription()" [disabled]="isTicking">
+        start
+      </button>
+      <button (click)="stopIntervalSubscription()" [disabled]="!isTicking">
+        stop
+      </button>
+    </div>
+
+    <div class="controls__manual">
+      <h3>manual control</h3>
+
+      <div class="controls__set">
+        <input type="text" #newString/>
+        <button (click)="setStringHandler(newString.value)">set string</button>
+      </div>
+
+      <button (click)="randomStringHandler()">random string</button>
+    </div>
+  </div>
+</div>
